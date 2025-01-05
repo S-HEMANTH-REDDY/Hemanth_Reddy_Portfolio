@@ -1,5 +1,3 @@
-// src/pages/Portfolio.jsx
-
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, Sun, Moon } from 'lucide-react';
 
