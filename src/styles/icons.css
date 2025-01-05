@@ -1,0 +1,21 @@
+/* Import technology icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css');
+
+/* Define icon classes */
+.tech-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+/* Brand colors for technology icons */
+.python-icon { color: #3776AB; }
+.react-icon { color: #61DAFB; }
+.node-icon { color: #339933; }
+.java-icon { color: #007396; }
+.aws-icon { color: #FF9900; }
+.docker-icon { color: #2496ED; }
+.mongodb-icon { color: #47A248; }
+.git-icon { color: #F05032; }
+.tensorflow-icon { color: #FF6F00; }
+.pytorch-icon { color: #EE4C2C; }
