@@ -23,6 +23,52 @@ const Portfolio = () => {
 
   return (
     <div className={`min-h-screen ${themeClasses.background} ${themeClasses.text} transition-colors duration-300`}>
+      {/* Navigation Bar */}
+      <nav className={`fixed top-0 left-0 right-0 ${isDarkMode ? 'bg-gray-800/95' : 'bg-white/95'} backdrop-blur-sm shadow-lg z-40`}>
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center h-16">
+            <div className="hidden md:flex items-center justify-center space-x-8">
+              <a 
+                href="#home" 
+                className={`${themeClasses.secondaryText} hover:${themeClasses.title} text-sm font-medium px-3 py-2 rounded-lg transition-colors duration-200 hover:bg-opacity-10 hover:bg-indigo-500`}
+              >
+                HOME
+              </a>
+              <a 
+                href="#experience" 
+                className={`${themeClasses.secondaryText} hover:${themeClasses.title} text-sm font-medium px-3 py-2 rounded-lg transition-colors duration-200 hover:bg-opacity-10 hover:bg-indigo-500`}
+              >
+                EXPERIENCE
+              </a>
+              <a 
+                href="#projects" 
+                className={`${themeClasses.secondaryText} hover:${themeClasses.title} text-sm font-medium px-3 py-2 rounded-lg transition-colors duration-200 hover:bg-opacity-10 hover:bg-indigo-500`}
+              >
+                PROJECTS
+              </a>
+              <a 
+                href="#skills" 
+                className={`${themeClasses.secondaryText} hover:${themeClasses.title} text-sm font-medium px-3 py-2 rounded-lg transition-colors duration-200 hover:bg-opacity-10 hover:bg-indigo-500`}
+              >
+                SKILLS
+              </a>
+              <a 
+                href="#publications" 
+                className={`${themeClasses.secondaryText} hover:${themeClasses.title} text-sm font-medium px-3 py-2 rounded-lg transition-colors duration-200 hover:bg-opacity-10 hover:bg-indigo-500`}
+              >
+                PUBLICATIONS
+              </a>
+              <a 
+                href="#contact" 
+                className={`${themeClasses.secondaryText} hover:${themeClasses.title} text-sm font-medium px-3 py-2 rounded-lg transition-colors duration-200 hover:bg-opacity-10 hover:bg-indigo-500`}
+              >
+                CONTACT
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Theme Toggle Button */}
       <div className="fixed top-0 right-0 p-4 z-50 flex items-center justify-center">
         <button
