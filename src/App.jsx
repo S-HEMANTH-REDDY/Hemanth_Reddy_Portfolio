@@ -1,14 +1,12 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Portfolio from './pages/Portfolio';
+import React from 'react'
+import Portfolio from './Portfolio'
 
-const App = () => {
+function App() {
   return (
-    <>
-      <Navbar />
+    <div className="bg-gray-900 min-h-screen">
       <Portfolio />
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default App;
+export default App
