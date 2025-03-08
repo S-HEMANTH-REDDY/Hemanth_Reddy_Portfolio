@@ -101,7 +101,3 @@ Feel free to contact me if you have any questions or would like to collaborate:
 - Email: [hemanth1729hr@gmail.com](mailto:hemanth1729hr@gmail.com)
 - LinkedIn: [https://www.linkedin.com/in/Hemanth-Reddy-UF](https://www.linkedin.com/in/Hemanth-Reddy-UF)
 - GitHub: [https://github.com/S-HEMANTH-REDDY](https://github.com/S-HEMANTH-REDDY)
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
