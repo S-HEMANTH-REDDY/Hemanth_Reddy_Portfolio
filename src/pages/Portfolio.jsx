@@ -61,8 +61,8 @@ const Portfolio = () => {
           { name: "EXPERIENCE", href: "#experience" },
           { name: "PROJECTS", href: "#projects" },
           { name: "SKILLS", href: "#skills" },
-          { name: "VOLUNTEERING", href: "#volunteering" },
           { name: "PUBLICATIONS", href: "#publications" },
+          { name: "VOLUNTEERING", href: "#volunteering" },
           { name: "CONTACT", href: "#contact" }
         ].map((item, index) => (
           <a 
@@ -131,7 +131,7 @@ const Portfolio = () => {
               {
                 title: "Graduate Research Assistant",
                 company: "University of Florida, Precision Agriculture Laboratory ",
-                period: "December 2024 - Present",
+                period: "September 2024 - Present",
                 description: "Developed a plant wetness monitoring system leveraging a Raspberry Pi and camera running Linux, achieving 97% accuracy in detecting plant conditions using CNN algorithms. Deployed and monitored the system across four Florida locations, providing continuous real-time data that improved yield consistency by 25% and reduced potential crop losses by 30% through early disease detection.",
                 skills: ["Machine Learning", "CNN", "Raspberry Pi", "Image Processing"]
               },
@@ -185,7 +185,7 @@ const Portfolio = () => {
               {
                 title: "Quick Chat - Real-time Messaging Application",
                 description: "Engineered a full-stack chat application with Go backend and React frontend, implementing real-time messaging, user authentication, and contact management features, achieving seamless message delivery with <2 second latency. Implemented Redis for efficient data storage and retrieval, optimizing chat history queries (35% speed gain); built HTTP server for REST APIs and WebSocket server.",
-                link: "https://github.com/S-HEMANTH-REDDY/Quick-Chat",
+                link: "https://github.com/S-HEMANTH-REDDY/Quick_Chat",
                 skills: ["Go", "React.js", "Redis", "WebSockets", "REST APIs"]
               },
               {
@@ -337,80 +337,6 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Volunteering Section */}
-      <section id="volunteering" className={`py-16 ${themeClasses.background} ${isVisible.volunteering ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} transition-all duration-1000`}>
-        <div className="container mx-auto px-4">
-          <h2 className={`text-3xl font-bold mb-12 text-center ${themeClasses.title}`}>Volunteering</h2>
-          <div className="space-y-8">
-            {/* IEEE Volunteer */}
-            <div className={`${themeClasses.card} p-8 rounded-xl shadow-lg`}>
-              <div className="flex flex-col md:flex-row justify-between items-start mb-4">
-                <div>
-                  <h3 className={`text-xl font-bold ${themeClasses.title}`}>Student Volunteer</h3>
-                  <p className={`text-lg ${themeClasses.secondaryText}`}>IEEE</p>
-                </div>
-                <div className="mt-2 md:mt-0">
-                  <span className={`${isDarkMode ? 'bg-blue-900/30 text-blue-400' : 'bg-indigo-100 text-indigo-700'} px-4 py-2 rounded-full text-sm font-medium`}>
-                    Jan 2021 - Jan 2022 · 1 yr
-                  </span>
-                </div>
-              </div>
-              <div className={`${themeClasses.secondaryText}`}>
-                <ul className="list-disc space-y-2 ml-5">
-                  <li>Actively participated in organizing and coordinating IEEE events and conferences, improving attendance by 30% through strategic marketing campaigns.</li>
-                  <li>Served as a core team member in the IEEE student branch, helping to arrange technical workshops, hands-on sessions, and industry talks for over 200 student participants.</li>
-                  <li>Collaborated with faculty advisors to develop a series of specialized technical seminars on emerging technologies, resulting in increased student engagement and membership growth.</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* National Service Scheme */}
-            <div className={`${themeClasses.card} p-8 rounded-xl shadow-lg`}>
-              <div className="flex flex-col md:flex-row justify-between items-start mb-4">
-                <div>
-                  <h3 className={`text-xl font-bold ${themeClasses.title}`}>Student Volunteer</h3>
-                  <p className={`text-lg ${themeClasses.secondaryText}`}>National Service Scheme</p>
-                </div>
-                <div className="mt-2 md:mt-0">
-                  <span className={`${isDarkMode ? 'bg-blue-900/30 text-blue-400' : 'bg-indigo-100 text-indigo-700'} px-4 py-2 rounded-full text-sm font-medium`}>
-                    Jan 2022 - Jan 2024 · 2 yrs
-                  </span>
-                </div>
-              </div>
-              <div className={`${themeClasses.secondaryText}`}>
-                <ul className="list-disc space-y-2 ml-5">
-                  <li>Led a team of 15 volunteers in multiple Community Clean-Up Campaigns across 5 different localities, collecting over 500kg of waste and improving sanitation in underserved areas.</li>
-                  <li>Developed and conducted Educational Outreach Programs for underprivileged children, teaching fundamental computer skills and basic programming concepts to over 50 students.</li>
-                  <li>Participated in blood donation camps and health awareness drives, helping to educate community members on preventive healthcare practices and early disease detection.</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Institution of Engineers */}
-            <div className={`${themeClasses.card} p-8 rounded-xl shadow-lg`}>
-              <div className="flex flex-col md:flex-row justify-between items-start mb-4">
-                <div>
-                  <h3 className={`text-xl font-bold ${themeClasses.title}`}>Student Volunteer</h3>
-                  <p className={`text-lg ${themeClasses.secondaryText}`}>The Institution of Engineers (India)</p>
-                </div>
-                <div className="mt-2 md:mt-0">
-                  <span className={`${isDarkMode ? 'bg-blue-900/30 text-blue-400' : 'bg-indigo-100 text-indigo-700'} px-4 py-2 rounded-full text-sm font-medium`}>
-                    Jan 2022 - Jan 2024 · 2 yrs
-                  </span>
-                </div>
-              </div>
-              <div className={`${themeClasses.secondaryText}`}>
-                <ul className="list-disc space-y-2 ml-5">
-                  <li>Assisted in organizing technical symposia and workshops, facilitating knowledge exchange between academic institutions and industry professionals.</li>
-                  <li>Contributed to the development of a mentorship program connecting engineering students with experienced professionals, resulting in improved career guidance and internship placements.</li>
-                  <li>Helped coordinate and document professional development activities, ensuring compliance with continuing education requirements for practicing engineers.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Publications Section */}
       <section id="publications" className={`py-16 ${themeClasses.background} ${isVisible.publications ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} transition-all duration-1000`}>
         <div className="container mx-auto px-4">
@@ -481,6 +407,79 @@ const Portfolio = () => {
                     <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
                   </svg>
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            {/* Volunteering Section */}
+            <section id="volunteering" className={`py-16 ${themeClasses.background} ${isVisible.volunteering ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'} transition-all duration-1000`}>
+        <div className="container mx-auto px-4">
+          <h2 className={`text-3xl font-bold mb-12 text-center ${themeClasses.title}`}>Volunteering</h2>
+          <div className="space-y-8">
+            {/* IEEE Volunteer */}
+            <div className={`${themeClasses.card} p-8 rounded-xl shadow-lg`}>
+              <div className="flex flex-col md:flex-row justify-between items-start mb-4">
+                <div>
+                  <h3 className={`text-xl font-bold ${themeClasses.title}`}>Student Member</h3>
+                  <p className={`text-lg ${themeClasses.secondaryText}`}>IEEE</p>
+                </div>
+                <div className="mt-2 md:mt-0">
+                  <span className={`${isDarkMode ? 'bg-blue-900/30 text-blue-400' : 'bg-indigo-100 text-indigo-700'} px-4 py-2 rounded-full text-sm font-medium`}>
+                    Jan 2021 - Jan 2022 · 1 yr
+                  </span>
+                </div>
+              </div>
+              <div className={`${themeClasses.secondaryText}`}>
+                <ul className="list-disc space-y-2 ml-5">
+                  <li>Actively participated in organizing and coordinating IEEE events and conferences, improving attendance by 30% through strategic marketing campaigns.</li>
+                  <li>Served as a core team member in the IEEE student branch, helping to arrange technical workshops, hands-on sessions, and industry talks for over 200 student participants.</li>
+                  <li>Collaborated with faculty advisors to develop a series of specialized technical seminars on emerging technologies, resulting in increased student engagement and membership growth.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* National Service Scheme */}
+            <div className={`${themeClasses.card} p-8 rounded-xl shadow-lg`}>
+              <div className="flex flex-col md:flex-row justify-between items-start mb-4">
+                <div>
+                  <h3 className={`text-xl font-bold ${themeClasses.title}`}>Student Volunteer</h3>
+                  <p className={`text-lg ${themeClasses.secondaryText}`}>National Service Scheme</p>
+                </div>
+                <div className="mt-2 md:mt-0">
+                  <span className={`${isDarkMode ? 'bg-blue-900/30 text-blue-400' : 'bg-indigo-100 text-indigo-700'} px-4 py-2 rounded-full text-sm font-medium`}>
+                    Jan 2022 - Jan 2024 · 2 yrs
+                  </span>
+                </div>
+              </div>
+              <div className={`${themeClasses.secondaryText}`}>
+                <ul className="list-disc space-y-2 ml-5">
+                  <li>Led a team of 15 volunteers in multiple Community Clean-Up Campaigns across 5 different localities, collecting over 500kg of waste and improving sanitation in underserved areas.</li>
+                  <li>Developed and conducted Educational Outreach Programs for underprivileged children, teaching fundamental computer skills and basic programming concepts to over 50 students.</li>
+                  <li>Participated in blood donation camps and health awareness drives, helping to educate community members on preventive healthcare practices and early disease detection.</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Institution of Engineers */}
+            <div className={`${themeClasses.card} p-8 rounded-xl shadow-lg`}>
+              <div className="flex flex-col md:flex-row justify-between items-start mb-4">
+                <div>
+                  <h3 className={`text-xl font-bold ${themeClasses.title}`}>Student Volunteer</h3>
+                  <p className={`text-lg ${themeClasses.secondaryText}`}>The Institution of Engineers (India)</p>
+                </div>
+                <div className="mt-2 md:mt-0">
+                  <span className={`${isDarkMode ? 'bg-blue-900/30 text-blue-400' : 'bg-indigo-100 text-indigo-700'} px-4 py-2 rounded-full text-sm font-medium`}>
+                    Jan 2022 - Jan 2024 · 2 yrs
+                  </span>
+                </div>
+              </div>
+              <div className={`${themeClasses.secondaryText}`}>
+                <ul className="list-disc space-y-2 ml-5">
+                  <li>Assisted in organizing technical symposia and workshops, facilitating knowledge exchange between academic institutions and industry professionals.</li>
+                  <li>Contributed to the development of a mentorship program connecting engineering students with experienced professionals, resulting in improved career guidance and internship placements.</li>
+                  <li>Helped coordinate and document professional development activities, ensuring compliance with continuing education requirements for practicing engineers.</li>
+                </ul>
               </div>
             </div>
           </div>
